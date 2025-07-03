@@ -1,112 +1,118 @@
-/* RESET */
-* {
+/* Fuentes y comportamiento general */
+body {
   font-family: 'Comic Neue', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
 
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
 }
-/* Estilos Header */
-.logotipo{
-  width: 4rem;
+
+p {
+  text-align: center;
 }
+
+/* Header */
 .index-header {
-  background-image: url("../img/fondococonut.jpeg");
-  background-size: cover;
-  background-repeat: repeat;
-  background-color: #ffe1c4;
-  padding: 16px;
-  /* text-align: center; */
-}
-.navegacion-superior {
-  color: white;
-  
-}
-.index-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #156e01;
   padding: 1rem;
-  h1 {
-    font-size: 1.5rem;
-  }
+  text-align: center;
 }
 
 .logo {
-  width: 80px;  
-  height: auto;
+  max-width: 200px;
 }
 
+/* Navbar */
+.navbar {
+  background-color: #40a140;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  list-style: none;
   margin: 0;
+}
+
+.nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
-.intro {
-  text-align: center;
-  margin: 2rem 0;
+.nav-links a:hover {
+  color: #c47135;
 }
 
+/* Título de Productos */
+.productos-header {
+  background-color: #fff4e6;
+  border-left: 5px solid #c47135;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+/* Contenedor de productos */
 .productos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
-  
-  h2 {
-    font-size: 1rem;
-  }
-  
+  gap: 2rem;
+  padding: 2rem;
 }
+
+/* Cada producto */
 .producto {
-  width: 200px;
-  background: white;
-  padding: 1rem;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1rem;
   text-align: center;
-  margin-top: 2rem;
 }
+
 .producto img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-
+  border-radius: 10px;
 }
 
-/* Estilos para pantallas de hasta 600px (celulares) */
-@media (max-width: 600px) {
-
-  body {
-    padding: 0.5rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    display: flex;
-  }
-
-  .productos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .producto {
-    width: 90%; /* Que ocupe casi todo el ancho */
-  }
-
-  /* FOOTER */
+.producto h3 {
+  margin: 0.5rem 0;
 }
-.footer-link {
+
+.precio {
+  font-weight: bold;
   color: #c47135;
-  text-decoration: none;
+  margin: 0.5rem 0;
 }
-.footer-link:hover {
-  text-decoration: underline;
+
+button {
+  background-color: #c47135;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: #a55627;
+}
+
+/* Footer */
 .footer {
   background-color: #111;
   color: #fff;
@@ -132,8 +138,8 @@
 }
 
 .footer-box h4 {
-  margin-bottom: 0.5rem;
   color: #ffd700;
+  margin-bottom: 0.5rem;
 }
 
 .footer-box a {
@@ -151,15 +157,25 @@
   margin-top: 1rem;
 }
 
-/* ✅ MEDIA QUERY para pantallas chicas */
-@media (max-width: 600px) {
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-box {
-    width: 90%;
-    max-width: 300px;
+  .productos-header {
+    margin: 0 auto 2rem auto;
+    text-align: center;
   }
 }
