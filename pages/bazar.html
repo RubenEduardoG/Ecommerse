@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoconutBliss - Bazar</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <meta name="description" content="Encontrá en CoconutBliss bazar natural con tazas, velas, difusores y accesorios ecológicos.">
+    <meta name="keywords" content="bazar natural, accesorios ecológicos, velas, difusores, CoconutBliss, artesanías">
+    <meta name="author" content="CoconutBliss">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bazar Natural | CoconutBliss">
+    <meta property="og:description" content="Accesorios y artículos naturales para tu hogar y bienestar.">
+    <meta property="og:image" content="../img/bazar.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tusitio.com/bazar.html">
+
+    <title>Bazar Natural | CoconutBliss</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-dark text-white py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <img src="../img/logo.png" alt="Logo CoconutBliss" class="logo">
-      <nav>
-        <ul class="nav">
-              <li><a href="productos.html">Productos</a></li>
-              <li><a href="bazar.html">Bazar</a></li>
-              <li><a href="sobre-nosotros.html">Quiénes Somos</a></li>
-              <li><a href="login.html">Iniciar Sesión</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <header class="bg-success text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">CoconutBliss</h1>
+            <nav aria-label="Menú principal">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+                    <li class="nav-item"><a href="bazar.html" class="nav-link text-white active">Bazar</a></li>
+                    <li class="nav-item"><a href="quienes-somos.html" class="nav-link text-white">Quiénes Somos</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Sección Bazar -->
-  <main class="py-5">
-    <div class="container">
-      <h1 class="text-center mb-5">Nuestro Bazar</h1>
-      <div class="row g-4">
-        <div c
+    <!-- Main -->
+    <main class="container py-5">
+        <h2 class="text-center">Bazar Natural</h2>
+        <p class="lead text-center">Accesorios y detalles naturales para tu hogar.</p>
+        
+        <div class="row g-4 mt-4">
+            <!-- Producto 1 -->
+            <div class="col-md-3 text-center">
+                <img src="../img/taza.jpg" alt="Taza ecológica CoconutBliss" class="img-fluid rounded">
+                <h5 class="mt-2">Taza Ecológica</h5>
+                <p>$900</p>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-3 text-center">
+                <img src="../img/vela.jpg" alt="Vela aromática artesanal CoconutBliss" class="img-fluid rounded">
+                <h5 class="mt-2">Vela Aromática</h5>
+                <p>$1200</p>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-3 text-center">
+                <img src="../img/difusor.jpg" alt="Difusor natural de aromas CoconutBliss" class="img-fluid rounded">
+                <h5 class="mt-2">Difusor Natural</h5>
+                <p>$1800</p>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-md-3 text-center">
+                <img src="../img/bolsa.jpg" alt="Bolsa reutilizable CoconutBliss" class="img-fluid rounded">
+                <h5 class="mt-2">Bolsa Reutilizable</h5>
+                <p>$600</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer original -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h4>Síguenos</h4>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a><br>
+                <a href="https://www.whatsapp.com" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer-box">
+                <h4>Contacto</h4>
+                <p>Email: contacto@coconutbliss.com</p>
+                <p>Tel: +54 9 341 555-5555</p>
+            </div>
+            <div class="footer-box">
+                <h4>Ubicación</h4>
+                <p>Rosario, Santa Fe, Argentina</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 CoconutBliss. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
