@@ -1,0 +1,14 @@
+// Centrado flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Card estilo CoconutBliss
+@mixin card-style($bg-color) {
+  background-color: $bg-color;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  padding: 1rem;
+}

@@ -1,0 +1,35 @@
+.footer {
+  background-color: $dark-bg;
+  color: $text-light;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  .footer-container {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-box {
+    @include card-style(#1c1c1c);
+    width: 250px;
+
+    h4 {
+      color: #ffd700;
+    }
+
+    a {
+      color: $text-light;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-copy {
+    font-size: 0.9rem;
+    color: lighten($text-light, 30%);
+  }
+}
